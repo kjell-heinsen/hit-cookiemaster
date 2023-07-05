@@ -1,6 +1,6 @@
 <?php
 defined( 'ABSPATH' ) or die( 'No Time for Looking for Freedom' );
-if(!class_exists('HIT_SUPPORT_AdminMenu')) {
+if(!class_exists('HIT_COOKIEMASTER_AdminMenu')) {
 	class HIT_COOKIEMASTER_AdminMenu {
 
 
