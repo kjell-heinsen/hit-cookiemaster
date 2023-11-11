@@ -13,7 +13,7 @@ Tested WP: 6.0.2
 
 
 require_once  'autoload.php';
-require_once 'config.php';
+require_once 'hit_config.php';
 $basename = 'hit-cookiemaster';
 $project_id = '22';
 
