@@ -4,7 +4,7 @@
 spl_autoload_register(function ($class) {
 
     // project-specific namespace prefix
-    $prefix = 'hitcodeblockelementor\\';
+    $prefix = 'hitcookiemaster\\';
    // $prefix = '';
 
     // base directory for the namespace prefix
