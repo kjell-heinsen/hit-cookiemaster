@@ -1,6 +1,6 @@
 # hit-cookiemaster
 
 
-Anfragen über https://bt.kjell-heinsen.de/
+Anfragen über https://bugtracker.heinsen-it.de/
 
 Roadmap Veröffentlichung steht noch aus.
