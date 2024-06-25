@@ -1,11 +1,11 @@
 <?php
 /*
 Plugin Name: HIT Cookiemaster
-Plugin URI: https://kjell-heinsen.de/
+Plugin URI: https://heinsen-it.de/
 Description: Cookiemaster Kjell Heinsen
 Author: Kjell Heinsen
 Version: 0.0.0.1
-Author URI: https://kjell-heinsen.de/
+Author URI: https://heinsen-it.de
 MINIMAL WP: 5.0.0
 MINIMAL PHP: 5.6.0
 Tested WP: 6.0.2
@@ -15,28 +15,25 @@ Tested WP: 6.0.2
 require_once  'autoload.php';
 require_once 'hit_config.php';
 $basename = 'hit-cookiemaster';
-$project_id = '22';
+$project_id = licencemanager::GetProjectID();
+$plugin_lizenz = licencemanager::Get();
 
 
+$server = random_int(1,4);
 
-
-
-
-
-
-$plugin_updateurl = "https://wpu2.heinsen-it.de/updates/".$basename."/";
+$plugin_updateurl = "https://wpu".$server.".heinsen-it.de/updates/".$basename."/";
 
 if($project_id <> ''){
     $plugin_updateurl = $plugin_updateurl.$project_id."/";
 }
-if($plugin_updateoptions <> ''){
-    $plugin_updateurl = $plugin_updateurl.$plugin_updateoptions."/";
+if($plugin_lizenz <> ''){
+    $plugin_updateurl = $plugin_updateurl.$plugin_lizenz."/";
 }
 
 
 
 
-require HITSECURITY_LIB.'plugin-update-checker/plugin-update-checker.php';
+require HITCOOKIEMASTER_LIB.'plugin-update-checker/plugin-update-checker.php';
 
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 $MyUpdateChecker = PucFactory::buildUpdateChecker(
