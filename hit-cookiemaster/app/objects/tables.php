@@ -1,9 +1,10 @@
 <?php
+namespace hitcookiemaster\app\objects;
 defined( 'ABSPATH' ) or die( 'No Time for Looking for Freedom' );
-if(!class_exists('HIT_COOKIEMASTER_Tables')) {
 
 
-    class HIT_COOKIEMASTER_Tables
+
+    class Tables
     {
         private $_tablelist = array();
 
@@ -18,7 +19,7 @@ if(!class_exists('HIT_COOKIEMASTER_Tables')) {
             return $this->_tablelist;
         }
 
-    }
+
 
 
 }
