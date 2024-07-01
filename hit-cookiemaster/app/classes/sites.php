@@ -1,7 +1,6 @@
 <?php
 
 namespace hitcookiemaster\app\classes;
-use hitcookiemaster\app\classes\VIEWS;
 
 
 defined('ABSPATH') or die('No Time for Looking for Freedom');
