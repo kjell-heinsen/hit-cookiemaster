@@ -4,7 +4,7 @@ Plugin Name: HIT Cookiemaster
 Plugin URI: https://heinsen-it.de/
 Description: Cookiemaster Kjell Heinsen
 Author: Kjell Heinsen
-Version: 0.0.0.1
+Version: 0.0.0.2
 Author URI: https://heinsen-it.de
 MINIMAL WP: 5.0.0
 MINIMAL PHP: 5.6.0
@@ -15,8 +15,8 @@ Tested WP: 6.0.2
 require_once  'autoload.php';
 require_once 'hit_config.php';
 $basename = 'hit-cookiemaster';
-$project_id = licencemanager::GetProjectID();
-$plugin_lizenz = licencemanager::Get();
+$project_id = \hitcookiemaster\app\classes\core\licencemanager::GetProjectID();
+$plugin_lizenz = \hitcookiemaster\app\classes\core\licencemanager::Get();
 
 
 $server = random_int(1,4);
