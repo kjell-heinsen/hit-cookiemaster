@@ -18,7 +18,6 @@ $basename = 'hit-cookiemaster';
 $project_id = \hitcookiemaster\app\classes\core\licencemanager::GetProjectID();
 $plugin_lizenz = \hitcookiemaster\app\classes\core\licencemanager::Get();
 
-
 $server = random_int(1,4);
 
 $plugin_updateurl = "https://wpu".$server.".heinsen-it.de/updates/".$basename."/";
