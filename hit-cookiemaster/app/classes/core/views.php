@@ -1,6 +1,8 @@
 <?php
 
-namespace hitcookiemaster\app\classes;
+namespace hitcookiemaster\app\classes\core;
+
+
 
 defined('ABSPATH') or die('No Time for Looking for Freedom');
 
@@ -11,7 +13,7 @@ defined('ABSPATH') or die('No Time for Looking for Freedom');
         // Funktion um die Views zu laden.
         public function render($path, $data = false, $error = false)
         {
-            $path = HITWPLIB_DIRPATH . "views/$path.php";
+            $path = HITCOOKIEMASTER_CLASSES . "views/$path.php";
             if (file_exists($path)) {
                 require $path;
             } else {

@@ -1,6 +1,11 @@
 <?php
 
-namespace hitcookiemaster\app\classes;
+namespace hitcodeblockelementor\app\classes\core;
+use function hitcookiemaster\app\classes\delete_transient;
+use function hitcookiemaster\app\classes\flush_rewrite_rules;
+use function hitcookiemaster\app\classes\get_transient;
+use function hitcookiemaster\app\classes\set_transient;
+
 defined('ABSPATH') or die('No Time for Looking for Freedom');
     class MyClass
     {

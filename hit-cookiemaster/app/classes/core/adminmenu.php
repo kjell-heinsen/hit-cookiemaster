@@ -1,6 +1,9 @@
 <?php
 
-namespace hitcookiemaster\app\classes;
+namespace hitcookiemaster\app\classes\core;
+use function hitcookiemaster\app\classes\add_menu_page;
+use function hitcookiemaster\app\classes\add_submenu_page;
+
 defined('ABSPATH') or die('No Time for Looking for Freedom');
 
     class adminmenu

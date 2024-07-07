@@ -1,6 +1,6 @@
 <?php
 
-namespace hitcookiemaster\app\classes;
+namespace hitcodeblockelementor\app\classes\core;
 
 defined('ABSPATH') or die('No Time for Looking for Freedom');
 
